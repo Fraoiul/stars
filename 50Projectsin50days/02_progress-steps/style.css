@@ -1,0 +1,82 @@
+.container {
+    width: 395px;
+    height: 200px;
+    margin: 30vh auto;
+    /* text-algin属性也可以设置行内元素在其父元素的水平对齐方式 */
+    /* 这里使用text-align属性将两个button放在div的中间 */
+    text-align: center;
+}
+
+.steps {
+    width: 395px;
+    height: 38px;
+    display: flex;
+    position: relative;
+}
+
+.steps::before {
+    content: '';
+    width: 293px;
+    height: 4px;
+    background-color: rgb(204, 204, 204);
+    position: absolute;
+    left: 32px;
+    top: 17px;
+    z-index: -2;
+    transition: width .4s ease;
+}
+
+.line {
+    width: 0px;
+    height: 4px;
+    background-color: #3498db;
+    position: absolute;
+    left: 32px;
+    top: 17px;
+    z-index: -1;
+    transition: width .4s ease;
+}
+
+.point {
+    width: 30px;
+    height: 30px;
+    border: 4px solid rgb(204, 204, 204);
+    border-radius: 50%;
+    background-color: white;
+    line-height: 30px;
+    text-align: center;
+    margin: 0 30px;
+}
+
+
+
+button {
+    width: 80px;
+    height: 40px;
+    background-color: rgb(204, 204, 204);
+    cursor: not-allowed;
+    border: none;
+    border-radius: 10px;
+    margin-top: 30px;
+    color: white;
+}
+
+.allow:active {
+    transform: scale(0.98);
+}
+
+/* 去掉元素获取聚焦时的轮廓 */
+/* 但是button标签不会有轮廓，主要还是针对input标签 */
+.allow:focus {
+    outline: 0;
+}
+
+.overPoint {
+    border-color: #3498db;
+    transition: border-color .4s;
+}
+
+.allow {
+    background-color: #3498db;
+    cursor: pointer;
+}
