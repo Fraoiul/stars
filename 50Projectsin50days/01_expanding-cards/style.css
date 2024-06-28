@@ -1,0 +1,43 @@
+* {
+    padding: 20px;
+}
+
+body {
+    width: 92vw;
+}
+
+#container {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.card {
+    width: 4vw;
+    transition: width 0.7s ease-in;
+    height: 80vh;
+    border-radius: 60px;
+    position: relative;
+    background-position: center center;
+}
+
+.card h3 {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    color: white;
+    opacity: 0;
+    /* 添加opacity属性的过渡 */
+    transition: opacity 0.3s ease-in;
+
+}
+
+.show {
+    width: 55vw;
+    transition: width 0.7s ease-in;
+}
+
+.show h3 {
+    opacity: 1;
+    transition: opacity 0.3s ease-in .5s;
+}
