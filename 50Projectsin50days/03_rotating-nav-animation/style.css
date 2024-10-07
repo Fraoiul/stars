@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #333;
+    /* 隐藏横向的滚动条 */
+    overflow-x: hidden;
+}
+
+#main {
+    background-color: white;
+    transform-origin: top left;
+    transition: transform .4s linear;
+}
+
+.container {
+    width: 60vw;
+    margin: 0 auto;
+    height: 1180px;
+}
+
+img {
+    width: 100%;
+}
+
+h1 {
+    margin-top: -100px;
+}
+
+h5 {
+    margin-bottom: 25px;
+    font-style: italic;
+    font-weight: lighter;
+}
+
+h3 {
+    margin: 20px 0;
+}
+
+.container p:last-child {
+    margin-top: 20px;
+}
+
+.rightUp {
+    position: relative;
+    width: 200px;
+    height: 200px;
+
+}
+
+.menu {
+    width: 200px;
+    height: 200px;
+    background-color: #FF7979;
+    border-radius: 50%;
+    position: absolute;
+    left: -50%;
+    top: -50%;
+    transition: transform .4s linear;
+}
+
+#main .rightUp .menu .fas {
+    /* 设置图标大小为35px */
+    font-size: 35px;
+    /* 设置图标颜色为白色 */
+    color: white;
+    position: relative;
+    cursor: pointer;
+}
+
+#main .rightUp .menu .fas:first-child {
+    left: 19%;
+    top: 60%;
+    font-size: 40px;
+}
+
+#main .rightUp .menu .fas:last-child {
+    right: -45%;
+    top: 63%;
+}
+
+nav {
+    position: relative;
+    bottom: 600px;
+    transform: translateX(-225px);
+    transition: transform .4s linear;
+}
+
+nav ul {
+    position: absolute;
+    list-style: none;
+}
+
+nav ul li {
+    cursor: pointer;
+}
+
+nav ul li:nth-child(2) {
+    margin: 35px 0;
+    margin-left: 20px;
+}
+
+nav ul li:nth-child(3) {
+    margin-left: 40px;
+}
+
+nav .fas {
+    color: white;
+    font-size: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    margin-left: 10px;
+}
+
+.showNav {
+    transform: translateX(20px);
+    transition: transform .3s linear .4s;
+}
