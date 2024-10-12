@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow: hidden;
+}
+
+.container {
+    height: 100vh;
+}
+
+.left {
+    width: 50vw;
+    height: 100vh;
+    background-image: url("./ps.jpg");
+    background-size: cover;
+    float: left;
+    transition: width 1s;
+    position: relative;
+}
+
+.left::before {
+    content: "";
+    width: 50vw;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: rgba(87, 84, 236, 0.6);
+    transition: width 1s;
+}
+
+.left:hover {
+    width: 70vw;
+}
+
+.left:hover::before {
+    width: 70vw;
+}
+
+.right {
+    width: 50vw;
+    height: 100vh;
+    background-image: url("./xbox.jpg");
+    background-size: cover;
+    float: right;
+    transition: width 1s;
+    position: relative;
+}
+
+.right::before {
+    content: "";
+    width: 50vw;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: rgba(43, 43, 43, 0.6);
+    transition: width 1s;
+}
+
+.right:hover {
+    width: 70vw;
+}
+
+.right:hover::before {
+    width: 70vw;
+}
+
+.reduceWidth {
+    width: 30vw;
+}
+
+.tipInfo {
+    width: 30vw;
+    height: 30vh;
+    margin: 30vh auto;
+    text-align: center;
+    position: relative;
+    z-index: 5;
+}
+
+p {
+    color: white;
+    font-size: 60px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+button {
+    font-size: 18px;
+    color: white;
+    padding: 25px 80px;
+    border: 3px solid white;
+    background-color: transparent;
+    margin: 20px 0;
+    cursor: pointer;
+}
+
+.left button:hover {
+    background-color: rgb(47, 121, 182);
+}
+
+.right button:hover {
+    background-color: green;
+}
