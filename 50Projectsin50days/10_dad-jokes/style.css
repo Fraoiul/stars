@@ -1,0 +1,49 @@
+body {
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #686de0;
+}
+
+.container {
+    /* 如果元素所在的父容器宽度小于800像素，那么这个元素就会缩小到父容器的宽度；
+     如果父容器的宽度大于或等于800像素，这个元素就会保持或缩小到800像素宽 */
+    max-width: 100%;
+    width: 800px;
+    background-color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+h3 {
+    letter-spacing: 2px;
+    opacity: 0.5;
+}
+
+#joke {
+    font-size: 30px;
+    letter-spacing: 1px;
+    line-height: 40px;
+    margin: 50px auto;
+    max-width: 600px;
+}
+
+#jokeBtn {
+    background-color: #9f68e0;
+    border: none;
+    border-radius: 10px;
+    padding: 14px 40px;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+}
+
+#jokeBtn:focus {
+    outline: none;
+}
+
+#jokeBtn:active {
+    transform: scale(.98);
+}
