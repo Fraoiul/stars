@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+
+.changeMode {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin: 80px 0;
+    cursor: pointer;
+}
+
+.schedule {
+    width: 200px;
+    height: 200px;
+    position: relative;
+}
+
+.needle {
+    position: absolute;
+    width: 4px;
+    transform-origin: center bottom;
+}
+
+.HNeedle {
+    height: 65px;
+    background-color: black;
+    left: calc(50% - 2px);
+    top: 35px;
+    transition: 0.5s;
+}
+
+.MNeedle {
+    height: 100px;
+    background-color: black;
+    left: calc(50% - 2px);
+    transition: 0.5s;
+}
+
+.SNeedle {
+    height: 100px;
+    background-color: red;
+    left: calc(50% - 2px);
+    /* transform: translate(calc(100px - 50%), -165px); */
+}
+
+.smallRound {
+    width: 8px;
+    height: 8px;
+    background-color: black;
+    border-radius: 50%;
+    position: absolute;
+    left: calc(50% - 4px);
+    top: calc(50% - 4px);
+}
+
+.bigRound {
+    width: 16px;
+    height: 16px;
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+    left: calc(50% - 8px);
+    top: calc(50% - 8px);
+}
+
+.time {
+    font-size: 60px;
+    font-weight: initial;
+    transition: 0.5s;
+}
+
+.date {
+    font-size: 14px;
+    letter-spacing: 0.3px;
+    color: #aaa;
+    margin-top: 10px;
+}
+
+.day {
+    font-size: 12px;
+    display: inline-block;
+    background-color: black;
+    color: white;
+    border-radius: 50%;
+    padding: 2px;
+}
+
+.changeMode.darkMode {
+    background-color: white;
+    color: black;
+}
+
+.darkMode {
+    color: white;
+}
+
+.needle.darkMode {
+    background-color: white;
+}
+
+.day.darkMode {
+    background-color: white;
+    color: black;
+}
+
+body.darkMode {
+    background-color: black;
+}
