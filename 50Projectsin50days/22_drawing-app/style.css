@@ -1,0 +1,47 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.canvas {
+    border: 2px solid steelblue;
+}
+
+.nav {
+    width: 764px;
+    background-color: steelblue;
+    padding: 20px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.userNav {
+    box-sizing: border-box;
+    vertical-align: middle;
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+    background-color: #fff;
+    font-size: 25px;
+    text-align: center;
+    border: none;
+    margin: 0 5px;
+
+    cursor: pointer;
+}
+
+button.userNav {
+    font-size: 35px;
+}
+
+.nav>:first-child {
+    margin-left: 0;
+}
+
+.nav>:last-child {
+    margin-left: auto;
+    margin-right: 0;
+}
