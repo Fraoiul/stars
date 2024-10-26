@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    background-color: #ecf0f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardContainer {
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 2%;
+    overflow: hidden;
+}
+
+.cardHeader {
+    width: 350px;
+    height: 200px;
+    background-color: #ecf0f1;
+    overflow: hidden;
+}
+
+.cardHeader img {
+    width: 350px;
+    height: 200px;
+    background-size: cover;
+    background-position: center center;
+}
+
+.cardContent {
+    width: 290px;
+    padding: 30px;
+}
+
+.title {
+    height: 10px;
+}
+
+.main {
+    margin: 20px 0;
+    color: #777;
+}
+
+.main p {
+    height: 10px;
+    margin: 10px 0;
+}
+
+.main p:first-child {
+    margin-top: 40px;
+}
+
+.main p:last-child {
+    margin-bottom: 30px;
+}
+
+.author {
+    display: flex;
+    align-items: center;
+}
+
+.photo,
+.info {
+    height: 40px;
+}
+
+.photo {
+    width: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.photo img {
+    width: 40px;
+    height: 40px;
+}
+
+.info {
+    width: 100px;
+    margin-left: 10px;
+}
+
+.info>* {
+    width: 100%;
+    height: 10px;
+    display: inline-block;
+}
+
+.info .birthday {
+    color: #777;
+}
+
+.animated-bg {
+    background-image: linear-gradient(to right,
+            #f6f7f8 0%,
+            #edeef1 10%,
+            #f6f7f8 20%,
+            #f6f7f8 100%);
+    background-size: 200% 100%;
+    animation: bgPos 1s linear infinite;
+}
+
+@keyframes bgPos {
+    0% {
+        background-position: 50% 0;
+    }
+
+    100% {
+        background-position: -150% 0;
+    }
+}
