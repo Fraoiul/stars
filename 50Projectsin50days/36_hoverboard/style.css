@@ -1,0 +1,31 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    height: 100vh;
+    background-color: #111111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 400px;
+    height: 500px;
+    background-color: #111111;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.item {
+    box-sizing: border-box;
+    width: 16px;
+    height: 16px;
+    margin: 2px;
+    transition-duration: 0s;
+    background: rgb(31, 32, 33);
+    /* box-shadow: rgb(17, 17, 17) 0px 0px 2px, rgb(17, 17, 17) 0px 0px 10px; */
+}
